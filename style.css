@@ -1,0 +1,313 @@
+/*
+ * Stylesheet for the Lao Economic Reform & Development Consulting website.
+ *
+ * The design aims to be clean and professional, with a focus on readability
+ * and simple hierarchy. Colour accents are used sparingly to draw attention
+ * to headings and actionable elements.
+ */
+
+/* Base typography and layout */
+html {
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  color: #27364b;
+  background-color: #f7f9fc;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 0;
+}
+
+/* Hero section */
+.hero {
+  background: linear-gradient(135deg, #f0f4f8, #e8f1f8);
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.badge {
+  display: inline-block;
+  background-color: #e0e7ff;
+  color: #3730a3;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin: 0 0 1rem;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero h1 .highlight {
+  color: #1d4ed8;
+}
+
+.hero p {
+  max-width: 600px;
+  margin: 0 0 1.5rem;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: #1e40af;
+}
+
+/* Services section */
+.services {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.services h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.services h2 .highlight {
+  color: #1d4ed8;
+}
+
+.services p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #4b5563;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.card {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.card p {
+  font-size: 0.95rem;
+  margin: 0 0 1rem;
+  color: #4b5563;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.card ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+  color: #1d4ed8;
+}
+
+/* Implementation section */
+.implementation {
+  padding: 4rem 0;
+  background-color: #ffffff;
+}
+
+.implementation h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.implementation h2 .highlight {
+  color: #1d4ed8;
+}
+
+.implementation p {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #4b5563;
+}
+
+.phases {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.phase {
+  background-color: #f8fafc;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.phase-number {
+  width: 40px;
+  height: 40px;
+  background-color: #1d4ed8;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.phase h3 {
+  font-size: 1.25rem;
+  margin: 0 0 0.25rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.phase .duration {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #6b7280;
+}
+
+.phase ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.phase ul li {
+  margin-bottom: 0.5rem;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.phase ul li::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  top: 0;
+  line-height: 1;
+  color: #1d4ed8;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #f1f5f9;
+  padding: 2rem 0;
+  font-size: 0.9rem;
+  color: #4b5563;
+}
+
+.footer-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer-about, .footer-contact {
+  flex: 1;
+  min-width: 260px;
+}
+
+.footer-about h4, .footer-contact h4 {
+  font-size: 1.25rem;
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.footer-about p {
+  max-width: 400px;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.footer-contact a {
+  color: #1d4ed8;
+  word-break: break-all;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+/* Responsive typography */
+@media (min-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero p {
+    font-size: 1.125rem;
+  }
+  .services h2, .implementation h2 {
+    font-size: 2.25rem;
+  }
+}
