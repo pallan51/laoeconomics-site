@@ -299,6 +299,26 @@ a:hover {
   color: #6b7280;
 }
 
+/* Report download section */
+.report {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.report h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: #1d4ed8;
+}
+
+.report p {
+  max-width: 700px;
+  margin: 0 auto 2rem;
+  color: #4b5563;
+}
+
 /* Responsive typography */
 @media (min-width: 768px) {
   .hero h1 {
